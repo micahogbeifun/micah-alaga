@@ -1,0 +1,59 @@
+.look-wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/assets/images/look/team.jpg);
+  padding: 195px 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.container {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.look-wrapper h1 {
+  color: #5ecc5e;
+  font-size: 40px;
+  padding-bottom: 12px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-family: "Domine", sans-serif;
+}
+.look-wrapper .menu-link {
+  display: inline-block;
+  background-color: #5ecc5e;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #b8efb8;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: scale 0.3s ease-out;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: scale 0.3s ease-out;
+  -moz-transition: scale 0.3s ease-out;
+  -ms-transition: scale 0.3s ease-out;
+  -o-transition: scale 0.3s ease-out;
+}
+.look-wrapper .menu-link:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.container::after {
+  clear: both;
+}

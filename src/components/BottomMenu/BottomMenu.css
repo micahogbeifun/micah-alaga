@@ -1,0 +1,37 @@
+.bottom-menu {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/menu/bottom-demo.jpg);
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  position: relative;
+}
+
+.bottom-menu .reservation {
+  display: inline-block;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  background: #df4a4a;
+  padding: 12px 28px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: capitalize;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+
+.bottom-menu .reservation:hover {
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  background-color: #ff7575;
+}

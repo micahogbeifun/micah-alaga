@@ -1,0 +1,125 @@
+.Gallery {
+  margin-top: 120px;
+}
+
+.gallery-banner {
+  background-image: url("/assets/images/gallery/reservations.jpg");
+  padding: 140px 0;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-container p {
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.gallery-wrapper {
+  padding: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-wrapper h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.gallery-wrapper p {
+  padding-bottom: 10px;
+  font-size: 17px;
+  color: rgb(20, 2, 2);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 35px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.image-container {
+  display: flex;
+  flex: 1;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.singleImage {
+  max-width: 100%;
+  margin: 15px;
+}
+.image-container .singleImage-1 {
+}
+
+.image-container .flex-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-2-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image-container.image-container-1,
+.image-container.image-container-3,
+.image-container.image-container-5 {
+  float: left;
+}
+
+.image-container.image-container-2,
+.image-container.image-container-4,
+.image-container.image-container-6 {
+  float: right;
+}
+.singleImage {
+  flex: 1;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.singleImage:hover {
+  z-index: 3;
+  transition: 0.9s;
+  transform: scale(1.24);
+  -webkit-transform: scale(1.24);
+  -moz-transform: scale(1.24);
+  -ms-transform: scale(1.24);
+  -o-transform: scale(1.24);
+}
+
+.cuisine .cuisine-h,
+.sweets .sweets-h {
+  margin-top: 85px;
+}
+
+@media (max-width: 1199px) {
+  .image-container .flex-2 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 899px) {
+  .gallery-wrapper {
+    padding: 100px 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  .image-container {
+    width: 100%;
+  }
+}

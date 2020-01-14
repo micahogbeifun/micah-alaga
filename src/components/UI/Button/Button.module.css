@@ -1,0 +1,44 @@
+/* .Button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+} */
+
+.Button {
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 1;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: #df4a4a;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.Success {
+  color: #5ecc5e;
+}
+
+.Danger {
+  color: #ffc4c4;
+}
+
+.Button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
