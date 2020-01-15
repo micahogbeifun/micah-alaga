@@ -24,7 +24,7 @@ class MenuList extends Component {
         <h1>{getHeaderOne(headers[index])}</h1>
         <div className="menu-items">
           {listArray.map(i => (
-            <div className="item">
+            <div key={name+i} className="item">
               <img
                 src={`/assets/images/menu/meals/${
                   soon && soon.includes(i) ? "soon" : name + i

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactDOM from "react-dom";
 import { Route, Switch, withRouter, Redirect } from "react-router-dom";
 
 import Menu from "./hoc/Menu/Menu";
@@ -21,6 +22,18 @@ class App extends Component {
     setTimeout(() => {
       this.myRef.current.scrollIntoView({ behavior: "smooth" });
     }, 250);
+  };
+
+  componentDidMount = () => {
+    window.addEventListener("scroll", this.handlePos);
+  };
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handlePos);
+  }
+
+  handlePos = () => {
+    const position = ReactDOM.findDOMNode(this).getBoundingClientRect();
+    this.setState({ position });
   };
 
   bookingEndedHandler = () => {
@@ -50,7 +63,7 @@ class App extends Component {
     );
     return (
       <div ref={this.myRef}>
-        <Menu>
+        <Menu pos={this.state.position}>
           <BookToggle clicked={this.bookingStarted} />
           <BookingModal
             show={this.state.booking}

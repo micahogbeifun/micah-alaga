@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 
 import HomeCarousel from "./HomeCarousel/HomeCarousel";
 import classes from "./Home.module.css";
@@ -9,18 +8,7 @@ import HomeMiniCarousel from "./HomeMiniCarousel/HomeMiniCarousel";
 import BookSection from "../BookSection/BookSection";
 import { updateObject } from "../../shared/utility";
 
-export class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.myRef = React.createRef();
-  }
-
-  handleScroll = () => {
-    setTimeout(() => {
-      this.myRef.current.scrollIntoView({ behavior: "smooth" });
-    }, 250);
-  };
-
+class Home extends Component {
   state = {
     bookForm: {
       name: {
@@ -60,9 +48,6 @@ export class Home extends Component {
       }
     }
   };
-  componentDidMount = () => {
-    this.handleScroll();
-  };
 
   submit = event => {
     event.preventDefault();
@@ -92,7 +77,7 @@ export class Home extends Component {
 
   render() {
     return (
-      <div ref={this.myRef} className={classes.Home}>
+      <div className={classes.Home}>
         <HomeCarousel />
         <IntroRow />
         <TakeALook />
@@ -107,4 +92,4 @@ export class Home extends Component {
   }
 }
 
-export default connect()(Home);
+export default Home;

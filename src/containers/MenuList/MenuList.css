@@ -177,4 +177,7 @@
   .item img {
     max-height: 75px;
   }
+  .menu-section {
+    padding: 100px 20px;
+  }
 }

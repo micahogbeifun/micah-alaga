@@ -130,6 +130,7 @@
   border-radius: 3px;
   font-size: 20px;
   opacity: 0.7;
+  max-height: 40px;
   cursor: pointer;
   transition: all o.3s ease-in;
   -webkit-transition: all o.3s ease-in;
@@ -159,5 +160,8 @@
 @media (max-width: 699px) {
   .footer-container {
     padding: 0 30px;
+  }
+  .footer-bottom {
+    padding: 30px;
   }
 }

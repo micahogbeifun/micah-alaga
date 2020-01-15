@@ -3,20 +3,9 @@ import React, { Component } from "react";
 import "./Gallery.css";
 
 class Gallery extends Component {
-  constructor(props) {
-    super(props);
-    this.myRef = React.createRef();
-  }
-
-  handleScroll = () => {
-    setTimeout(() => {
-      this.myRef.current.scrollIntoView({ behavior: "smooth" });
-    }, 250);
-  };
   state = { urls: null };
 
   componentDidMount = () => {
-    this.handleScroll();
     const urls = [];
     for (let i = 1; i < 49; i++) {
       urls.push(i);
@@ -94,7 +83,7 @@ class Gallery extends Component {
     }
 
     return (
-      <div ref={this.myRef} className="Gallery">
+      <div className="Gallery">
         <section className="gallery-banner">
           <div className="gallery-container">
             <h1>Our Gallery</h1>
