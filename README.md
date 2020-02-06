@@ -1,6 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Responsive restaurant web app.
+## About
+
+This Responsive Restaurant Web-App is a modern restaurant site with various animations, images, forms, carousels etc.
+
+## Features
+
+This app incorporates various components such as Routing, animations, carousels, scroll-detection, forms, maps etc. 
 
 ## Available Scripts
 
