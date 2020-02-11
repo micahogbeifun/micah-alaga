@@ -7,8 +7,9 @@ import NavComponents from "../NavComponents/NavComponents";
 import SideToggle from "../SideMenu/SideToggle/SideToggle";
 
 const TopMenu = props => {
-  let show = null;
+  let show = true;
   if (props.pos) show = props.pos.y === 120 || props.pos.y <= -480;
+
   return (
     <CSSTransition
       in={show}

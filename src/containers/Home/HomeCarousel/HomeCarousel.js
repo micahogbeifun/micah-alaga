@@ -58,6 +58,7 @@ class HomeCarousel extends Component {
       imageArray.push(i);
     }
     const { currentSlide } = this.state;
+    const imageStyle = { minHeight: "100%", width: "auto" };
     let gallery = (
       <div className="Gallery-div">
         <div
@@ -81,6 +82,7 @@ class HomeCarousel extends Component {
             {imageArray.map((image, index) => (
               <div key={index} className="image-card">
                 <img
+                  style={index === 0 ? imageStyle : null}
                   onClick={image.clicked}
                   id={`img-${index}`}
                   src={`/assets/images/slider/slide${index + 1}.jpg`}
